@@ -7,7 +7,7 @@ import {
 } from "../data/products";
 
 interface Product {
-  id: number;
+    id: string;
   name: string;
   quantity: string;
   price: string;

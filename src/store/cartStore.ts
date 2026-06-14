@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 interface CartItem {
-  id: number;
+  id: string;
   name: string;
   quantity: string;
   price: string;
@@ -13,9 +13,9 @@ interface CartItem {
 interface CartStore {
   items: CartItem[];
   addToCart: (product: Omit<CartItem, "count">) => void;
-  removeFromCart: (id: number) => void;
-  increaseCount: (id: number) => void;
-  decreaseCount: (id: number) => void;
+removeFromCart: (id: string) => void;
+increaseCount: (id: string) => void;
+decreaseCount: (id: string) => void;
   clearCart: () => void;
   totalPrice: () => number;
 }

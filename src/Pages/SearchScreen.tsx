@@ -6,7 +6,7 @@ import { exclusiveOffers, bestSelling, groceryProducts } from "../data/products"
 import BottomNav from "../Components/BottomNav";
 
 interface Product {
-  id: number;
+    id: string;
   name: string;
   quantity: string;
   price: string;

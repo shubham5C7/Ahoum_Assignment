@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 interface WishlistItem {
-  id: number;
+    id: string;
   name: string;
   quantity: string;
   price: string;
@@ -12,8 +12,8 @@ interface WishlistItem {
 interface WishlistStore {
   items: WishlistItem[];
   addToWishlist: (product: WishlistItem) => void;
-  removeFromWishlist: (id: number) => void;
-  isWishlisted: (id: number) => boolean;
+removeFromWishlist: (id: string) => void;  
+isWishlisted: (id: string) => boolean; 
 }
 
 export const useWishlistStore = create<WishlistStore>((set, get) => ({
