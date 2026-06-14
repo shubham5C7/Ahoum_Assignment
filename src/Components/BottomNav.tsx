@@ -12,7 +12,7 @@ const tabs: { id: Tab; label: string; Icon: React.FC<{ active: boolean }>; route
   { id: "explore",   label: "Explore",   Icon: ExploreIcon,   route: "/explore" },
   { id: "cart",      label: "Cart",      Icon: CartIcon,      route: "/cart" },
   { id: "favourite", label: "Favourite", Icon: FavouriteIcon, route: "/favourite" },
-  { id: "account",   label: "Account",   Icon: AccountIcon,   route: "/account" },
+  { id: "account",   label: "Account",   Icon: AccountIcon,   route: "/" },
 ];
 
 export default function BottomNav({ active = "shop"}: BottomNavProps) {
