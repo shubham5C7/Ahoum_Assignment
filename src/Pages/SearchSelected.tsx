@@ -10,7 +10,7 @@ import carrot from "../assets/carrot.png";
 import { ShopIcon, ExploreIcon, CartIcon, FavouriteIcon, AccountIcon } from "../Components/NavIcons";
 
 interface Product {
-    id: string;
+  id: number; 
   name: string;
   quantity: string;
   price: string;

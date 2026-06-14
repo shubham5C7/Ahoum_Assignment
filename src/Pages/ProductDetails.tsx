@@ -27,7 +27,7 @@ const ProductDetails = (): React.JSX.Element => {
 
   const { addToCart } = useCartStore();
   const products = useProductStore((state) => state.products);
-  const product = products.find((item) => item.id === Number(id));
+  const product = products.find((item) => String(item.id) === id);
   const { addToWishlist, removeFromWishlist, isWishlisted } = useWishlistStore();
 
   if (!product) {

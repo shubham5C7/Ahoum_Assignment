@@ -1,7 +1,7 @@
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 interface CartItem {
-  id: string;
+  id: number; 
   name: string;
   image: string;
   quantity: string;
@@ -11,9 +11,9 @@ interface CartItem {
 
 interface CartTableRowProps {
   item: CartItem;
-  onIncrease: (id: string) => void;
-  onDecrease: (id: string) => void;
-  onRemove: (id: string) => void;
+  onIncrease: (id: number) => void; 
+  onDecrease: (id: number) => void; 
+  onRemove: (id: number) => void; 
 }
 
 export default function CartTableRow({ item, onIncrease, onDecrease, onRemove }: CartTableRowProps) {
